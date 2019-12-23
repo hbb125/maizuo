@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title></title>
+    <script src="js/mui.min.js"></script>
+    <link href="css/mui.css" rel="stylesheet"/>
+    <script type="text/javascript" charset="utf-8">
+      	mui.init();
+    </script>
+	<link rel="stylesheet" href="http://at.alicdn.com/t/font_1578579_08e2t9m7jghi.css">
+</head>
+<body>
+	<div id="slider" class="mui-slider" >
+		<div class="mui-slider-group mui-slider-loop">
+			<!-- 额外增加的一个节点(循环轮播：第一个节点是最后一张轮播) -->
+			<div class="mui-slider-item mui-slider-item-duplicate">
+				<a href="#">
+					<img src="./images/3.jpg">
+				</a>
+			</div>
+			<!-- 第一张 -->
+			<div class="mui-slider-item">
+				<a href="#">
+					<img src="./images/1.jpg">
+				</a>
+			</div>
+			<!-- 第二张 -->
+			<div class="mui-slider-item">
+				<a href="#">
+					<img src="./images/2.jpg">
+				</a>
+			</div>
+			<!-- 第三张 -->
+			<div class="mui-slider-item">
+				<a href="#">
+					<img src="./images/3.jpg">
+				</a>
+			</div>
+			<!-- 额外增加的一个节点(循环轮播：最后一个节点是第一张轮播) -->
+			<div class="mui-slider-item mui-slider-item-duplicate">
+				<a href="#">
+					<img src="./images/1.jpg">
+				</a>
+			</div>
+		</div>
+		<div class="mui-slider-indicator">
+			<div class="mui-indicator mui-active"></div>
+			<div class="mui-indicator"></div>
+			<div class="mui-indicator"></div>
+			<div class="mui-indicator"></div>
+		</div>
+	</div>
+	<div class="mui-content">
+	        <ul class="mui-table-view mui-grid-view mui-grid-9">
+	            <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3"><a href="#">
+	                    <span class="mui-icon mui-icon-home"></span>
+	                    <div class="mui-media-body">Home</div></a></li>
+	            <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3"><a href="#">
+	                    <span class="mui-icon mui-icon-email"><span class="mui-badge">5</span></span>
+	                    <div class="mui-media-body">Email</div></a></li>
+	            <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3"><a href="#">
+	                    <span class="mui-icon mui-icon-chatbubble"></span>
+	                    <div class="mui-media-body">Chat</div></a></li>
+	            <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3"><a href="#">
+	                    <span class="mui-icon mui-icon-location"></span>
+	                    <div class="mui-media-body">location</div></a></li>
+	            <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3"><a href="#">
+	                    <span class="mui-icon mui-icon-search"></span>
+	                    <div class="mui-media-body">Search</div></a></li>
+	            <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3"><a href="#">
+	                    <span class="mui-icon mui-icon-phone"></span>
+	                    <div class="mui-media-body">Phone</div></a></li>
+	            <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3"><a href="#">
+	                    <span class="mui-icon mui-icon-gear"></span>
+	                    <div class="mui-media-body">Setting</div></a></li>
+	            <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3"><a href="#">
+	                    <span class="mui-icon mui-icon-info"></span>
+	                    <div class="mui-media-body">about</div></a></li>
+	           <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3"><a href="#">
+	                    <span class="mui-icon mui-icon-more"></span>
+	                    <div class="mui-media-body">more</div></a></li>
+	        </ul> 
+	</div>
+	<nav class="mui-bar mui-bar-tab ">
+		<a class="mui-tab-item mui-active">
+			<span class="mui-icon icon-dianying iconfont"></span>
+			<span class="mui-tab-label">电影</span>
+		</a>
+		<a class="mui-tab-item " href="./yingyuan.html">
+			<span class="mui-icon icon-yingyuan iconfont"></span>
+			<span class="mui-tab-label">影院</span>
+		</a>
+		<a class="mui-tab-item" href="./zixun.html">
+			<span class="mui-icon icon-zixun iconfont"></span>
+			<span class="mui-tab-label">咨讯</span>
+		</a>
+		<a class="mui-tab-item" href="./my.html">
+			<span class="mui-icon icon-yiliaohangyedeICON- iconfont"></span>
+			<span class="mui-tab-label">我的</span>
+		</a>
+	</nav>
+</body>
+<script src="js/mui.min.js"></script>
+	<script type="text/javascript">
+		mui("body").on("tap","a",function(){
+			document.location.href = this.href;
+		})
+	</script>
+</html>
